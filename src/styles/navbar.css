@@ -1,9 +1,13 @@
 .nav-container {
   display: flex;
   /* flex-direction: column; */
-  width: 7vw;
+  /* width: 7vw; */
   background-color: #ff922b;
-  height: 100vh;
+  /* height: 100vh; */
+  /* max-width: 100vw; */
+
+  grid-column: 1;
+  grid-row: 1/-1;
   /* overflow: scroll; */
 }
 
