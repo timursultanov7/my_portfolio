@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
@@ -186,34 +187,12 @@ function App() {
 
           <div className="right-side height-200vh"></div>
         </section>
-        <section id="contact" className="contact grid ">
-          <div className="left-side">
-            <h2 className="">Reach Out To Me</h2>
-            {/* <form>
-              <input type="text" />
-              <input type="phone" />
-              <input type="email" />
-            </form> */}
-          </div>
+        <section id="contact" className="contact">
+          <h2 className="section-title-contact">Contact Me</h2>
 
-          <div className="right-side"></div>
+          <ContactForm />
         </section>
-        {/* </div> */}
-        {/* RIGHT SIDE */}
-        {/* <div className="right-side">
-          <div className="see-my-work-btn">
-            <a href="#work" className="btn btn-work">
-              See My Work
-            </a>
-          </div>
 
-          <div className="frame-work">
-            <img
-              src="https://live.staticflickr.com/65535/52565210905_0816cc33f5_z.jpg"
-              className="img-frame"
-            />
-          </div>
-        </div> */}
         <div className="div-footer">
           <Footer />
         </div>

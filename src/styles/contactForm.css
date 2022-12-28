@@ -1,0 +1,121 @@
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  /* border: 5px solid black; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 5rem;
+  width: 848px;
+  height: 600px;
+}
+
+.name-phone-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #212529;
+  gap: 0.5rem;
+}
+
+.input-item {
+  /* padding: 0.8rem 4rem; */
+  width: 20rem;
+  height: 2.5rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  /* border-radius: 1px; */
+  /* background-color: #f8f9fa; */
+}
+
+.input-email {
+  width: 100%;
+}
+
+.input-msg {
+  width: 100%;
+  height: 5rem;
+
+  /* padding: 1.5rem; */
+}
+
+.input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212529;
+  color: #fff4e6;
+  border-radius: 19px;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.input-btn:hover {
+  transform: translate(0, -3px);
+  background-color: #fff4e6;
+  color: #212529;
+}
+
+/* Thank you window */
+
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #212529;
+  /* color: #fff4e6; */
+  gap: 3rem;
+  width: 848px;
+  height: 600px;
+  /* border: 5px solid black; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 5rem;
+}
+
+.thanks-msg {
+  /* background-color: #fff4e6; */
+  padding: 2rem;
+  border-radius: 9px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.social-networks {
+}
+
+.social-network-list {
+  list-style: none;
+  display: flex;
+
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.social-network-item {
+}
+
+.icon-contact {
+  font-size: 4rem;
+  /* transform: rotate(90deg); */
+}
+
+.icon-contact:hover {
+  color: #fff4e6;
+}
