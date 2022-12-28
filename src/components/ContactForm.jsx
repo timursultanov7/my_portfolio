@@ -116,11 +116,7 @@ const ContactForm = () => {
             />
           </label>
 
-          {/* <input className="input-btn" type="submit" value="Send Message" /> */}
-
-          <a className="input-btn" href="mailto: timursultanov7@gmail.com">
-            Send Email
-          </a>
+          <input className="input-btn" type="submit" value="Send Message" />
         </form>
       )}
     </div>
