@@ -74,22 +74,24 @@ const ContactForm = () => {
             <label className="input-wrapper" labelfor="name">
               Name
               <input
-                className="input-item"
+                className="input-item input-name"
                 type="text"
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
+                placeholder="John Smith"
               />
             </label>
             <label className="input-wrapper" labelfor="phone">
               Phone Number
               <input
-                className="input-item"
+                className="input-item input-phone"
                 type="number"
                 id="phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
+                placeholder="0123456789"
               />
             </label>
           </div>
@@ -102,6 +104,7 @@ const ContactForm = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              placeholder="john@me.com"
             />
           </label>
           <label className="input-wrapper" labelfor="message">
@@ -113,10 +116,11 @@ const ContactForm = () => {
               value={msg}
               onChange={(e) => setMsg(e.target.value)}
               required
+              placeholder="Your message"
             />
           </label>
 
-          <input className="input-btn" type="submit" value="Send Message" />
+          <input className="input-btn" type="submit" value="SEND MESSAGE" />
         </form>
       )}
     </div>

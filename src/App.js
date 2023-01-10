@@ -1,15 +1,57 @@
 import React, { useState } from "react";
 import "./App.css";
+import "../src/styles/navbar.css";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import MobileNavBar from "./components/MobileNavBar";
+import { useContext } from "react";
+import { NavContext } from "./context/NavContext";
 
 function App() {
+  const { isNavOpen, handleMobileNav } = useContext(NavContext);
+
   return (
     <div className="app-container">
       <div className="main-wrapper">
-        <NavBar />
+        {!isNavOpen ? (
+          <div className="icon-div" onClick={handleMobileNav}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className={isNavOpen ? "icon-nav black-color" : "icon-nav"}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+        ) : (
+          <div className="icon-div" onClick={handleMobileNav}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className={isNavOpen ? "icon-nav black-color" : "icon-nav"}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        )}
 
+        {isNavOpen ? <MobileNavBar /> : ""}
+        <NavBar />
         <section id="timur" className="timur grid">
           <div className="left-side">
             <h1 className="timur-title">
@@ -45,53 +87,143 @@ function App() {
           <div className="left-side">
             <h2 className="section-title">My Work</h2>
 
-            <div className="num-and-title-wrap">
-              <span className="title-numer">01.</span>{" "}
-              <h3> E-commerce fullstack website 'Shopy'</h3>
+            <div className="project-item-left--1">
+              <div className="num-and-title-wrap">
+                <span className="title-numer">01.</span>{" "}
+                <h3> E-commerce fullstack website 'Shopy'</h3>
+              </div>
+
+              <div className="lines">
+                <div className="vertical-line"></div>
+                <div className="grid-line-item-1">
+                  <p className="work-desc-p">
+                    E-commerce shop for buying goods. Application that helps
+                    people to find and buy healthy products.
+                  </p>
+                </div>
+
+                <div className="grid-line-item-2">
+                  <div className="horizontal-line"></div>
+
+                  <p>
+                    <span className="role">Role: </span>
+                    Fullstack Web Development and support of website
+                  </p>
+
+                  <div className="horizontal-line"></div>
+                </div>
+                <div className="grid-line-item-3">
+                  <a
+                    href="https://shopy-ecommerce-app-react.netlify.app/"
+                    className="btn"
+                    target="_blank"
+                  >
+                    Go To WebSite
+                  </a>
+                </div>
+              </div>
+
+              <img
+                src="https://live.staticflickr.com/65535/52565210905_0816cc33f5_z.jpg"
+                className="img-frame img-frame--1"
+              />
             </div>
 
-            <div className="lines">
-              <div className="vertical-line"></div>
-              <div className="grid-line-item-1">
-                <p>
-                  E-commerce shop for buying goods. Application that helps
-                  people to find and buy healthy products.
-                </p>
+            <div className="project-item-left--2">
+              <div className="num-and-title-wrap">
+                <span className="title-numer">02.</span>{" "}
+                <h3> E-commerce fullstack website 'Shopy'</h3>
               </div>
 
-              <div className="grid-line-item-2">
-                <div className="horizontal-line"></div>
+              <div className="lines">
+                <div className="vertical-line"></div>
+                <div className="grid-line-item-1">
+                  <p className="work-desc-p">
+                    E-commerce shop for buying goods. Application that helps
+                    people to find and buy healthy products.
+                  </p>
+                </div>
 
-                <p>
-                  <span className="role">Role: </span>
-                  Fullstack Web Development and support of website
-                </p>
+                <div className="grid-line-item-2">
+                  <div className="horizontal-line"></div>
 
-                <div className="horizontal-line"></div>
+                  <p>
+                    <span className="role">Role: </span>
+                    Fullstack Web Development and support of website
+                  </p>
+
+                  <div className="horizontal-line"></div>
+                </div>
+                <div className="grid-line-item-3">
+                  <a
+                    href="https://shopy-ecommerce-app-react.netlify.app/"
+                    className="btn"
+                    target="_blank"
+                  >
+                    Go To WebSite
+                  </a>
+                </div>
               </div>
-              <div className="grid-line-item-3">
-                <a
-                  href="https://shopy-ecommerce-app-react.netlify.app/"
-                  className="btn"
-                  target="_blank"
-                >
-                  Go To WebSite
-                </a>
+
+              <img
+                src="https://live.staticflickr.com/65535/52565210905_0816cc33f5_z.jpg"
+                className="img-frame img-frame--2"
+              />
+            </div>
+            <div className="project-item-left--3">
+              <div className="num-and-title-wrap">
+                <span className="title-numer">03.</span>{" "}
+                <h3> E-commerce fullstack website 'Shopy'</h3>
               </div>
+
+              <div className="lines">
+                <div className="vertical-line"></div>
+                <div className="grid-line-item-1">
+                  <p className="work-desc-p">
+                    E-commerce shop for buying goods. Application that helps
+                    people to find and buy healthy products.
+                  </p>
+                </div>
+
+                <div className="grid-line-item-2">
+                  <div className="horizontal-line"></div>
+
+                  <p>
+                    <span className="role">Role: </span>
+                    Fullstack Web Development and support of website
+                  </p>
+
+                  <div className="horizontal-line"></div>
+                </div>
+                <div className="grid-line-item-3">
+                  <a
+                    href="https://shopy-ecommerce-app-react.netlify.app/"
+                    className="btn"
+                    target="_blank"
+                  >
+                    Go To WebSite
+                  </a>
+                </div>
+              </div>
+              <img
+                src="https://live.staticflickr.com/65535/52565210905_0816cc33f5_z.jpg"
+                className="img-frame img-frame--3"
+              />
             </div>
           </div>
 
-          <div className="right-side flex-center">
-            {/* <div className="frame-work flex-center"> */}
-            <img
-              src="https://live.staticflickr.com/65535/52565210905_0816cc33f5_z.jpg"
-              className="img-frame"
-            />
-            {/* </div> */}
-          </div>
+          <div className="right-side flex-center"></div>
         </section>
-        <section className="about grid">
+        <section id="about" className="my-stack grid">
+          <div className="left-side  height-110vh">
+            {" "}
+            {/* <h2 className="section-title">My Stack</h2> */}
+          </div>
+          <div className="right-side height-110vh"> </div>
+
+          {/* <h2 className="section-title">My Stack</h2> */}
           <div className="my-stack-container">
+            <h2 className="section-title">My Stack</h2>
             <div className="cards">
               <div className="card">
                 <img
@@ -151,17 +283,15 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="left-side height-200vh">
-            <h2 id="about" className="section-title">
-              My Stack
-            </h2>
-
+        </section>
+        <section className="about grid ">
+          <div className="left-side height-110vh">
             <div className="about-subsection">
-              <h2 className="section-title">About Me</h2>
               <figure className="description-figure">
+                <h2 className="section-title about-me-title">About Me</h2>
                 <img
                   className="figure-img"
-                  src="https://live.staticflickr.com/65535/52588774772_1c1c2ae31d_n.jpg"
+                  src="https://live.staticflickr.com/65535/52607097288_e1bf2c6e51_n.jpg"
                   width="240"
                   height="240"
                   alt="IMG_2459_3120x4160-removebg-removebg-preview"
@@ -185,138 +315,17 @@ function App() {
             </div>
           </div>
 
-          <div className="right-side height-200vh"></div>
+          <div className="right-side height-110vh "></div>
         </section>
         <section id="contact" className="contact">
           <h2 className="section-title-contact">Contact Me</h2>
 
           <ContactForm />
         </section>
-
         <div className="div-footer">
           <Footer />
         </div>
       </div>
-
-      {/* MOBILE VERSION */}
-      {/* <main className="mobile-main-wrapper">
-        {" "}
-        <div className="mobile-top-part">
-          {" "}
-          <div id="timur" className="timur item">
-            <h1 className="timur-title">
-              <span className="shadowed-text">Hi there, I'm</span> Timur
-              Sultanov <span className="shadowed-text">Frontend Web</span>{" "}
-              Developer
-            </h1>
-            <p className="title-paragraph">
-              I am passionate about solving <br></br> business problems through
-              <br></br>
-              human-centered design. <br></br> Curious by nature and<br></br>
-              business-minded.
-            </p>
-
-            <a href="#about" className="btn">
-              Reach Out To Me
-            </a>
-          </div>
-          <div id="work" className="work item">
-            <h1 className="section-title">My Work</h1>
-          
-            <div className="num-and-title-wrap">
-              <span className="title-numer">01.</span>{" "}
-              <h2> E-commerce fullstack website 'Shopy'</h2>
-            </div>
-
-            <div className="lines">
-              <div className="vertical-line"></div>
-              <div className="grid-line-item-1">
-                <p>
-                  E-commerce shop for buying goods. Application that helps
-                  people to find and buy healthy products.
-                </p>
-              </div>
-
-              <div className="grid-line-item-2">
-                <div className="horizontal-line"></div>
-
-                <p>
-                  <span className="role">Role: </span>
-                  Fullstack Web Development and support of website
-                </p>
-
-                <div className="horizontal-line"></div>
-              </div>
-              <div className="grid-line-item-3">
-                <a
-                  href="https://shopy-ecommerce-app-react.netlify.app/"
-                  className="btn"
-                  target="_blank"
-                >
-                  Go To WebSite
-                </a>
-              </div>
-            </div>
-
-            <h1 className="section-title">My Skills</h1>
-          </div>
-          <div id="about" className="about item">
-            <h1>About</h1>
-            <p>
-              Exercitation officia officia nostrud reprehenderit non.Labore
-              velit ad sunt deserunt ex dolor minim dolor minim pariatur mollit
-              ea nostrud.Irure non deserunt quis est ex sit adipisicing nisi.In
-              ipsum sint id voluptate excepteur duis ullamco aliquip cillum
-              tempor mollit ipsum.Deserunt laboris fugiat tempor reprehenderit
-              exercitation excepteur nostrud sit amet.Eu quis est ad proident
-              do.Elit cillum labore laboris duis Lorem eiusmod officia quis.
-              Exercitation officia officia nostrud reprehenderit non.Labore
-              velit ad sunt deserunt ex dolor minim dolor minim pariatur mollit
-              ea nostrud.Irure non deserunt quis est ex sit adipisicing nisi.In
-              ipsum sint id voluptate excepteur duis ullamco aliquip cillum
-              tempor mollit ipsum.Deserunt laboris fugiat tempor reprehenderit
-              exercitation excepteur nostrud sit amet.Eu quis est ad proident
-              do.Elit cillum labore laboris duis Lorem eiusmod officia quis.{" "}
-            </p>
-          </div>
-          <div id="contact" className="contact item">
-            <h1>Contact</h1>
-            <p>
-              Exercitation officia officia nostrud reprehenderit non.Labore
-              velit ad sunt deserunt ex dolor minim dolor minim pariatur mollit
-              ea nostrud.Irure non deserunt quis est ex sit adipisicing nisi.In
-              ipsum sint id voluptate excepteur duis ullamco aliquip cillum
-              tempor mollit ipsum.Deserunt laboris fugiat tempor reprehenderit
-              exercitation excepteur nostrud sit amet.Eu quis est ad proident
-              do.Elit cillum labore laboris duis Lorem eiusmod officia quis.
-              Exercitation officia officia nostrud reprehenderit non.Labore
-              velit ad sunt deserunt ex dolor minim dolor minim pariatur mollit
-              ea nostrud.Irure non deserunt quis est ex sit adipisicing nisi.In
-              ipsum sint id voluptate excepteur duis ullamco aliquip cillum
-              tempor mollit ipsum.Deserunt laboris fugiat tempor reprehenderit
-              exercitation excepteur nostrud sit amet.Eu quis est ad proident
-              do.Elit cillum labore laboris duis Lorem eiusmod officia quis.{" "}
-            </p>
-          </div>
-        </div> */}
-      {/* <div className="right-side">
-          <div className="see-my-work-btn">
-            <a href="#work" className="btn btn-work">
-              See My Work
-            </a>
-          </div>
-
-          <div className="frame">
-            <img
-              src="https://live.staticflickr.com/65535/52565210905_0816cc33f5_z.jpg"
-              className="img-frame"
-            />
-          </div>
-        </div> */}
-      {/* <div>
-          <Footer />
-        </div> */}
-      {/* </main> */}
     </div>
   );
 }

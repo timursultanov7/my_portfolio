@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/navbar.css";
-
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { useContext } from "react";
+import { NavContext } from "../context/NavContext";
+const MobileNavBar = () => {
+  const { isNavOpen, setIsNavOpen, handleMobileNav } = useContext(NavContext);
 
-const NavBar = () => {
   return (
-    <nav className="nav-container sticky">
-      <ul className="nav-items">
-        <li className="nav-item">
+    <nav className="nav-mobile-wrapper">
+      <ul className="nav-items-mobile">
+        <li onClick={() => setIsNavOpen(false)} className="nav-item">
           <a className="nav-link" href="#timur">
             Timur
           </a>
         </li>
-        <li className="nav-item">
+        <li onClick={() => setIsNavOpen(false)} className="nav-item">
           <a className="nav-link" href="#work">
             Work
           </a>
         </li>
-        <li className="nav-item">
+        <li onClick={() => setIsNavOpen(false)} className="nav-item">
           <a className="nav-link" href="#about">
             About
           </a>
         </li>
-        <li className="nav-item">
+        <li onClick={() => setIsNavOpen(false)} className="nav-item">
           <a className="nav-link contact-link" href="#contact">
             Contact
           </a>
@@ -30,7 +32,7 @@ const NavBar = () => {
       </ul>
 
       <ul className="social-media-links">
-        <li className="nav-item">
+        <li onClick={() => setIsNavOpen(false)} className="nav-item">
           <a
             className="nav-link"
             href="https://www.facebook.com/timursultanov77777"
@@ -39,7 +41,7 @@ const NavBar = () => {
             <FaFacebook className="icon" />
           </a>
         </li>
-        <li className="nav-item">
+        <li onClick={() => setIsNavOpen(false)} className="nav-item">
           <a
             className="nav-link"
             href="https://www.linkedin.com/in/timursultanov7/"
@@ -48,7 +50,7 @@ const NavBar = () => {
             <FaLinkedin className="icon" />
           </a>
         </li>
-        <li className="nav-item">
+        <li onClick={() => setIsNavOpen(false)} className="nav-item">
           <a
             className="nav-link"
             href="https://github.com/timursultanov7"
@@ -62,4 +64,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default MobileNavBar;
