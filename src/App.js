@@ -109,7 +109,7 @@ function App() {
             <div className="project-item-left--1">
               <div className="num-and-title-wrap">
                 <span className="title-numer">01.</span>{" "}
-                <h3> E-commerce fullstack website 'Shopy'</h3>
+                <h3> E-commerce app 'Shopy'</h3>
               </div>
 
               <div className="lines">
@@ -151,15 +151,14 @@ function App() {
             <div className="project-item-left--2">
               <div className="num-and-title-wrap">
                 <span className="title-numer">02.</span>{" "}
-                <h3> E-commerce fullstack website 'Shopy'</h3>
+                <h3> Web App Omnifood </h3>
               </div>
-
               <div className="lines">
                 <div className="vertical-line"></div>
                 <div className="grid-line-item-1">
                   <p className="work-desc-p">
-                    E-commerce shop for buying goods. Application that helps
-                    people to find and buy healthy products.
+                    The application for ordering and delivering healthy food for
+                    everyday.
                   </p>
                 </div>
 
@@ -168,14 +167,14 @@ function App() {
 
                   <p>
                     <span className="role">Role: </span>
-                    Fullstack Web Development and support of website
+                    Frontend web development
                   </p>
 
                   <div className="horizontal-line"></div>
                 </div>
                 <div className="grid-line-item-3">
                   <a
-                    href="https://shopy-ecommerce-app-react.netlify.app/"
+                    href="https://omnifoood-app.netlify.app/"
                     className="btn"
                     target="_blank"
                   >
@@ -183,9 +182,8 @@ function App() {
                   </a>
                 </div>
               </div>
-
               <img
-                src="https://live.staticflickr.com/65535/52565210905_0816cc33f5_z.jpg"
+                src="https://live.staticflickr.com/65535/52621170361_09d884dcff_c.jpg"
                 className="img-frame img-frame--2"
               />
             </div>

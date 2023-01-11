@@ -462,6 +462,10 @@ body {
   transform: translate(135%, 30%);
 }
 
+.img-frame--2 {
+  background-color: red;
+}
+
 .contact {
   grid-column: 2/-1;
   grid-row: 5;
@@ -908,6 +912,10 @@ body {
   .img-frame--3 {
     transform: translate(6%, 260%);
   }
+
+  /* .img-frame--2 {
+    transform: translate(6%, 250%);
+  } */
 }
 
 @media (max-width: 375px) {
