@@ -20,7 +20,10 @@
 
 .name-phone-container {
   display: flex;
-  gap: 3rem;
+  /* flex-direction: column; */
+  justify-content: space-between;
+
+  gap: 1rem;
   width: 100%;
 }
 
@@ -32,11 +35,12 @@
 .input-wrapper {
   display: flex;
   flex-direction: column;
+  /* justify-content: sp; */
   font-size: 2rem;
   font-weight: 500;
   /* color: #212529; */
   color: #fff4e6;
-  gap: 0.5rem;
+  /* gap: 35rem; */
 }
 
 .input-item {

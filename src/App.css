@@ -872,6 +872,42 @@ body {
   .input-btn {
     font-size: 9rem;
   }
+
+  .timur-title {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .my-stack {
+    height: 200vh;
+  }
+
+  .about-subsection {
+    width: 20vw;
+  }
+
+  .my-stack-container {
+    /* padding: 5rem; */
+    transform: translate(8%, -20%);
+
+    /* width: 95%; */
+    /* height: 200vh; */
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-subsection {
+    transform: translate(-7%, -100%);
+  }
+
+  .img-frame--1,
+  .img-frame--2,
+  .img-frame--3 {
+    transform: translate(6%, 260%);
+  }
 }
 
 @media (max-width: 375px) {
@@ -885,3 +921,39 @@ body {
     transform: translate(-7%, -100%);
   }
 }
+
+/* SAFARI */
+
+.no-flexbox-gap .nav-items li:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.no-flexbox-gap .social-media-links li {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .see-my-work-container .see-my-work-img {
+  margin-bottom: 1rem;
+}
+
+.no-flexbox-gap .cards .card img {
+  margin-bottom: 1.6rem;
+}
+.no-flexbox-gap .name-phone-container {
+  margin-bottom: 1.6rem;
+}
+.no-flexbox-gap .input-wrapper {
+  margin-bottom: 1.6rem;
+}
+
+/* @media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+   
+  }
+} */

@@ -26,6 +26,25 @@ const ContactForm = () => {
     }
   };
 
+  function checkFlexGap() {
+    const flex = document.createElement("div");
+    flex.style.display = "flex";
+    flex.style.flexDirection = "column";
+    flex.style.rowGap = "1px";
+
+    flex.appendChild(document.createElement("div"));
+    flex.appendChild(document.createElement("div"));
+
+    document.body.appendChild(flex);
+    const isSupported = flex.scrollHeight === 1;
+    flex.parentNode.removeChild(flex);
+    console.log(isSupported);
+
+    if (!isSupported) document.body.classList.add("no-flexbox-gap");
+  }
+
+  checkFlexGap();
+
   return (
     <div className="form-wrapper">
       {formIsSent ? (
@@ -71,8 +90,10 @@ const ContactForm = () => {
       ) : (
         <form className="form-container" onSubmit={handleSubmit}>
           <div className="name-phone-container">
-            <label className="input-wrapper" labelfor="name">
-              Name
+            <div className="input-wrapper">
+              <label className="" labelfor="name">
+                Name
+              </label>
               <input
                 className="input-item input-name"
                 type="text"
@@ -82,9 +103,10 @@ const ContactForm = () => {
                 required
                 placeholder="John Smith"
               />
-            </label>
-            <label className="input-wrapper" labelfor="phone">
-              Phone Number
+            </div>
+
+            <div className="input-wrapper">
+              <label labelfor="phone">Phone Number</label>
               <input
                 className="input-item input-phone"
                 type="number"
@@ -93,10 +115,11 @@ const ContactForm = () => {
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="0123456789"
               />
-            </label>
+            </div>
           </div>
-          <label className="input-wrapper" labelfor="email">
-            Email
+
+          <div className="input-wrapper">
+            <label labelfor="email">Email</label>
             <input
               className="input-item  input-email"
               type="email"
@@ -106,9 +129,9 @@ const ContactForm = () => {
               required
               placeholder="john@me.com"
             />
-          </label>
-          <label className="input-wrapper" labelfor="message">
-            Your Message
+          </div>
+          <div className="input-wrapper">
+            <label labelfor="message">Your Message</label>
             <input
               className="input-item input-msg"
               type="text"
@@ -118,7 +141,7 @@ const ContactForm = () => {
               required
               placeholder="Your message"
             />
-          </label>
+          </div>
 
           <input className="input-btn" type="submit" value="SEND MESSAGE" />
         </form>
