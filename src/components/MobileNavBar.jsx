@@ -27,55 +27,76 @@ const MobileNavBar = () => {
 
   return (
     <nav className="nav-mobile-wrapper">
-      <ul className="nav-items-mobile">
-        <li onClick={() => setIsNavOpen(false)} className="nav-item">
-          <a className="nav-link" href="#timur">
+      <ul className="nav-items--mobile">
+        <li
+          onClick={() => setIsNavOpen(false)}
+          className="nav-item nav-item--mobile"
+        >
+          <a className="nav-link  nav-link--mobile" href="#timur">
             Timur
           </a>
         </li>
-        <li onClick={() => setIsNavOpen(false)} className="nav-item">
-          <a className="nav-link" href="#work">
+        <li
+          onClick={() => setIsNavOpen(false)}
+          className="nav-item nav-item--mobile"
+        >
+          <a className="nav-link nav-link--mobile" href="#work">
             Work
           </a>
         </li>
-        <li onClick={() => setIsNavOpen(false)} className="nav-item">
-          <a className="nav-link" href="#about">
+        <li
+          onClick={() => setIsNavOpen(false)}
+          className="nav-item nav-item--mobile"
+        >
+          <a className="nav-link nav-link--mobile" href="#about">
             About
           </a>
         </li>
-        <li onClick={() => setIsNavOpen(false)} className="nav-item">
-          <a className="nav-link contact-link" href="#contact">
+        <li
+          onClick={() => setIsNavOpen(false)}
+          className="nav-item nav-item--mobile"
+        >
+          <a className="nav-link nav-link--mobile contact-link" href="#contact">
             Contact
           </a>
         </li>
       </ul>
 
-      <ul className="social-media-links">
-        <li onClick={() => setIsNavOpen(false)} className="nav-item">
+      <ul className="social-media-links social-media-links--mobile">
+        <li
+          onClick={() => setIsNavOpen(false)}
+          className="nav-item nav-item--social-mobile"
+        >
           <a
-            className="nav-link"
+            className="nav-link nav-link--mobile "
             href="https://www.facebook.com/timursultanov77777"
             target="_blank"
           >
-            <FaFacebook className="icon" />
+            <FaFacebook className="icon icon-nav--mobile" />
           </a>
         </li>
-        <li onClick={() => setIsNavOpen(false)} className="nav-item">
+        <li
+          onClick={() => setIsNavOpen(false)}
+          className="nav-item nav-item--social-mobile"
+        >
           <a
-            className="nav-link"
+            className="nav-link nav-link--mobile"
             href="https://www.linkedin.com/in/timursultanov7/"
             target="_blank"
           >
-            <FaLinkedin className="icon" />
+            <FaLinkedin className="icon icon-nav--mobile" />
           </a>
         </li>
-        <li onClick={() => setIsNavOpen(false)} className="nav-item">
+        <li
+          onClick={() => setIsNavOpen(false)}
+          className="nav-item nav-item--social-mobile"
+        >
           <a
-            className="nav-link"
+            className="nav-link nav-link--mobile"
             href="https://github.com/timursultanov7"
             target="_blank"
           >
-            <FaGithub className="icon" />
+            <FaGithub className="icon icon-nav--mobile" />
           </a>
         </li>
       </ul>

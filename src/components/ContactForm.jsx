@@ -46,7 +46,7 @@ const ContactForm = () => {
   checkFlexGap();
 
   return (
-    <div className="form-wrapper">
+    <div className="form-wrapper" id="contact">
       {formIsSent ? (
         <div className="thanks-container">
           <div className="social-network">
