@@ -1,12 +1,12 @@
 footer {
-  /* width: 90vw; */
+  width: 100vw;
   padding: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-  grid-column: 1/-1;
-  grid-row: 2/-2;
+  grid-column: 2/-1;
+  grid-row: 7;
   color: #212529;
 }
 
