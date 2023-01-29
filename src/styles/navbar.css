@@ -57,6 +57,9 @@
   transform: rotate(-90deg);
   margin-bottom: 2rem;
 }
+.nav-item:last-child {
+  margin: 0rem;
+}
 .nav-item--mobile {
   transform: rotate(0deg);
   list-style: none;
@@ -72,7 +75,7 @@
 
 .nav-item:hover {
   /* text-decoration: underline; */
-  font-weight: 700;
+  /* font-weight: 500; */
 }
 .nav-item:active {
   /* text-decoration: underline; */
@@ -82,13 +85,17 @@
 .nav-item:visited {
 }
 
-.nav-link {
+.nav-link:link,
+.nav-link:visited {
   text-decoration: none;
   color: #212529;
+  font-weight: 500;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:active {
   color: #fff4e6;
+  /* font-weight: 500; */
 }
 
 .nav-link--mobile {
@@ -149,6 +156,10 @@
   .nav-item {
     font-size: 0.7rem;
     margin-bottom: 0.8rem;
+  }
+  .nav-item:last-child {
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
   }
 
   .icon {

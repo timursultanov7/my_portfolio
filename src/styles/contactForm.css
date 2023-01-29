@@ -193,7 +193,8 @@
 
 @media (max-width: 50em) {
   .input-btn {
-    padding: 1.5rem 2.5rem;
+    /* padding: 1.5rem 2.5rem; */
+    height: 4rem;
   }
 }
 

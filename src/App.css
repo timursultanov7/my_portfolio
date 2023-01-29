@@ -17,7 +17,7 @@ input:focus {
 }
 
 html {
-  /* 1rem = 16px */
+  scroll-behavior: smooth;
 }
 
 body {
