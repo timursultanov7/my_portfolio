@@ -1,6 +1,6 @@
-footer {
+.footer {
   width: 100vw;
-  padding: 0.7rem;
+  padding: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,12 @@ footer {
   grid-column: 2/-1;
   grid-row: 7;
   color: #212529;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 2;
 }
 
 /* MEDIA QUAERIES */
