@@ -19,7 +19,10 @@ function App() {
     <div className="app-container">
       <div className="main-wrapper">
         {!isNavOpen ? (
-          <div className="icon-div" onClick={handleMobileNav}>
+          <div
+            className="icon-div sticky--mobile-nav"
+            onClick={handleMobileNav}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

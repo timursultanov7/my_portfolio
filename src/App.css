@@ -42,7 +42,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   grid-template-columns: 1fr 1fr;
-
+  align-items: center;
   justify-items: center;
   column-gap: 1rem;
 
@@ -83,7 +83,7 @@ body {
 }
 
 .black-color {
-  color: #212529;
+  color: #212529 !important;
 }
 
 .grid {
