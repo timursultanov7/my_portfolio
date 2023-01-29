@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+
 import "./App.css";
 import "../src/styles/navbar.css";
 import ContactForm from "./components/ContactForm";
@@ -19,25 +20,27 @@ function App() {
     <div className="app-container">
       <div className="main-wrapper">
         {!isNavOpen ? (
-          <div
-            className="icon-div sticky--mobile-nav"
-            onClick={handleMobileNav}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className={isNavOpen ? "icon-nav black-color" : "icon-nav"}
+          <a href="#timur">
+            <div
+              className="icon-div sticky--mobile-nav"
+              onClick={handleMobileNav}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className={isNavOpen ? "icon-nav black-color" : "icon-nav"}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>{" "}
+          </a>
         ) : (
           <div className="icon-div" onClick={handleMobileNav}>
             <svg

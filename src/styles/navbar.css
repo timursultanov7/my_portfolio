@@ -121,6 +121,7 @@
   top: 1rem;
   right: 3rem;
   z-index: 999;
+  overflow: hidden;
   /* width: 100vw; */
 }
 

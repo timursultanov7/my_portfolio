@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/navbar.css";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { useContext } from "react";
@@ -23,7 +23,7 @@ const MobileNavBar = () => {
 
   checkFlexGap();
 
-  const { isNavOpen, setIsNavOpen, handleMobileNav } = useContext(NavContext);
+  const { setIsNavOpen } = useContext(NavContext);
 
   return (
     <nav className="nav-mobile-wrapper">
