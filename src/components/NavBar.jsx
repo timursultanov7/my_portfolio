@@ -26,22 +26,22 @@ const NavBar = () => {
   return (
     <nav className="nav-container sticky">
       <ul className="nav-items">
-        <li className="nav-item">
+        <li className="nav-item nav-item nav-item--main">
           <a className="nav-link" href="#timur">
             Timur
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item nav-item nav-item--main">
           <a className="nav-link" href="#work">
             Work
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item nav-item--main">
           <a className="nav-link" href="#about">
             About
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item nav-item nav-item--main">
           <a className="nav-link" href="#contact">
             Contact
           </a>
@@ -49,7 +49,7 @@ const NavBar = () => {
       </ul>
 
       <ul className="social-media-links">
-        <li className="nav-item">
+        <li className="nav-item nav-item nav-item--social">
           <a
             className="nav-link"
             href="https://www.facebook.com/timursultanov77777"
@@ -58,7 +58,7 @@ const NavBar = () => {
             <FaFacebook className="icon" />
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item nav-item--social">
           <a
             className="nav-link"
             href="https://www.linkedin.com/in/timursultanov7/"
@@ -67,7 +67,7 @@ const NavBar = () => {
             <FaLinkedin className="icon" />
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item nav-item--social">
           <a
             className="nav-link"
             href="https://github.com/timursultanov7"

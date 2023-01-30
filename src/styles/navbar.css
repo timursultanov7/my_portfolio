@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 4rem; */
+
   list-style: none;
   align-items: center;
   margin-bottom: 4rem;
@@ -55,11 +55,26 @@
   cursor: pointer;
   text-transform: uppercase;
   transform: rotate(-90deg);
-  margin-bottom: 2rem;
+  /* margin-bottom: 5rem; */
 }
 .nav-item:last-child {
   margin: 0rem;
 }
+
+.nav-item--social {
+  margin-bottom: 2rem !important;
+}
+.nav-item--social:last-child {
+  margin-bottom: 0rem !important;
+}
+
+.nav-item--main {
+  margin-bottom: 5rem !important;
+}
+.nav-item--main:last-child {
+  margin-bottom: 0rem !important;
+}
+
 .nav-item--mobile {
   transform: rotate(0deg);
   list-style: none;
