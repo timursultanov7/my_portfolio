@@ -27,8 +27,12 @@ export const Timur = () => {
             alt="42A95DAD-D947-4AAF-BFEB-A7F8D6682CAC-removebg-preview (1)"
           />
 
-          <a href="#work" className="btn btn-work">
-            See My Work
+          <a
+            href="https://online.flippingbook.com/view/393417963/"
+            target="_blank"
+            className="btn btn-work"
+          >
+            See My CV
           </a>
         </div>
       </div>
