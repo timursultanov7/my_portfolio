@@ -28,7 +28,7 @@ export const Timur = () => {
           />
 
           <a
-            href="https://online.flippingbook.com/view/514686956/"
+            href="https://online.flippingbook.com/view/514139642/"
             target="_blank"
             className="btn btn-work"
           >
